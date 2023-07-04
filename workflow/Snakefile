@@ -1,0 +1,13 @@
+#! /usr/bin/env python
+
+configfile: "config/config.yaml"
+
+include: "rules/download_remote.smk"
+include: "rules/install_hicpro.smk"
+
+
+# Needs to be updated
+rule all:
+    input:
+       rules.install_hicpro.output 
+

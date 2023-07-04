@@ -1,0 +1,23 @@
+# this file contains everything to configure the workflow on a global scale.
+#
+# directory for temps
+#
+local_tmp: "/tmp"
+
+# downloads
+#
+downloads:
+    v3.1.0.tar.gz:
+        url: "https://github.com/nservant/HiC-Pro/archive/refs/tags/v3.1.0.tar.gz"
+        md5: "7f1bfbc3ddc708a0b902beebf8a013df"
+
+# decompressing
+#
+software:
+    hicpro_targz: "resources/downloads/v3.1.0.tar.gz"
+
+# HiC-Pro 
+hicpro:
+    software_dir: "resources/software/hicpro"
+    software_bin: "resources/software/hicpro/bin/HiC-Pro"
+
